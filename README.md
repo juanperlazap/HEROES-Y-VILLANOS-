@@ -20,7 +20,7 @@ Personaliza la app con temas y ajustes
 "Bruce" → Batman, Bruce Banner
 
 ⚡ Características Técnicas
-📱 App Híbrida - Funciona en iOS, Android y Web
+📱 App Híbrida - Android y Web
 
 🚀 Rendimiento Optimizado - Lazy loading y cache inteligente
 
