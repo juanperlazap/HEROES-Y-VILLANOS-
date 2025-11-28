@@ -2,10 +2,7 @@
   {
     "id": "batman",
     "name": "Batman",
-    "aliases": [
-      "Bruce Wayne",
-      "The Dark Knight"
-    ],
+    "aliases": ["Bruce Wayne", "The Dark Knight"],
     "universe": "DC",
     "affiliation": "Hero",
     "powerStats": {
@@ -16,58 +13,17 @@
       "power": 40,
       "combat": 95
     },
-    "powers": [
-      "Detective skills",
-      "Martial arts",
-      "Technology"
-    ],
-    "weaknesses": [
-      "Human limits",
-      "No superpowers"
-    ],
+    "powers": ["Detective skills", "Martial arts", "Technology"],
+    "weaknesses": ["Human limits", "No superpowers"],
     "firstAppearance": 1939,
     "rating": 4.7,
     "image": "assets/images/batman.jpg",
     "biography": "Bruce Wayne es un multimillonario que lucha contra el crimen en Gotham City como Batman."
   },
   {
-    "id": "joker",
-    "name": "Joker",
-    "aliases": [
-      "The Clown Prince of Crime"
-    ],
-    "universe": "DC",
-    "affiliation": "Villain",
-    "powerStats": {
-      "intelligence": 90,
-      "strength": 10,
-      "speed": 15,
-      "durability": 20,
-      "power": 25,
-      "combat": 60
-    },
-    "powers": [
-      "Criminal mastermind",
-      "Expert chemist",
-      "Manipulation"
-    ],
-    "weaknesses": [
-      "Unpredictable",
-      "No superpowers"
-    ],
-    "firstAppearance": 1940,
-    "rating": 4.5,
-    "image": "assets/images/joker.jpg",
-    "biography": "El archienemigo de Batman, conocido por su apariencia de payaso y su naturaleza caótica."
-  },
-  {
     "id": "superman",
     "name": "Superman",
-    "aliases": [
-      "Clark Kent",
-      "Kal-El",
-      "Man of Steel"
-    ],
+    "aliases": ["Clark Kent", "Kal-El", "Man of Steel"],
     "universe": "DC",
     "affiliation": "Hero",
     "powerStats": {
@@ -78,161 +34,17 @@
       "power": 100,
       "combat": 75
     },
-    "powers": [
-      "Super strength",
-      "Flight",
-      "Heat vision",
-      "X-ray vision"
-    ],
-    "weaknesses": [
-      "Kryptonite",
-      "Magic"
-    ],
+    "powers": ["Super strength", "Flight", "Heat vision", "X-ray vision"],
+    "weaknesses": ["Kryptonite", "Magic"],
     "firstAppearance": 1938,
     "rating": 4.9,
     "image": "assets/images/superman.jpg",
     "biography": "El último hijo de Krypton que protege la Tierra como un símbolo de esperanza."
   },
   {
-    "id": "wolverine",
-    "name": "Wolverine",
-    "aliases": [
-      "Logan",
-      "Weapon X"
-    ],
-    "universe": "Marvel",
-    "affiliation": "Hero",
-    "powerStats": {
-      "intelligence": 65,
-      "strength": 45,
-      "speed": 40,
-      "durability": 100,
-      "power": 60,
-      "combat": 90
-    },
-    "powers": [
-      "Regeneration",
-      "Adamantium skeleton",
-      "Enhanced senses",
-      "Claws"
-    ],
-    "weaknesses": [
-      "Magnets",
-      "Memory loss",
-      "Berserker rage"
-    ],
-    "firstAppearance": 1974,
-    "rating": 4.7,
-    "image": "assets/images/wolverine.jpg",
-    "biography": "Mutante con garras de adamantium y habilidades regenerativas, miembro de los X-Men."
-  },
-  {
-    "id": "black_panther",
-    "name": "Black Panther",
-    "aliases": [
-      "T'Challa",
-      "King of Wakanda"
-    ],
-    "universe": "Marvel",
-    "affiliation": "Hero",
-    "powerStats": {
-      "intelligence": 90,
-      "strength": 65,
-      "speed": 70,
-      "durability": 80,
-      "power": 75,
-      "combat": 95
-    },
-    "powers": [
-      "Enhanced senses",
-      "Vibranium suit",
-      "Martial arts mastery",
-      "Genius intellect"
-    ],
-    "weaknesses": [
-      "Responsibility to Wakanda",
-      "Vibranium dependency"
-    ],
-    "firstAppearance": 1966,
-    "rating": 4.5,
-    "image": "assets/images/black_panther.jpg",
-    "biography": "Rey y protector de Wakanda, poseedor de habilidades mejoradas y tecnología de vibranium."
-  },
-  {
-    "id": "storm",
-    "name": "Storm",
-    "aliases": [
-      "Ororo Munroe",
-      "Goddess of the Storm"
-    ],
-    "universe": "Marvel",
-    "affiliation": "Hero",
-    "powerStats": {
-      "intelligence": 75,
-      "strength": 20,
-      "speed": 40,
-      "durability": 35,
-      "power": 95,
-      "combat": 70
-    },
-    "powers": [
-      "Weather manipulation",
-      "Flight",
-      "Atmospheric control",
-      "Lightning generation"
-    ],
-    "weaknesses": [
-      "Claustrophobia",
-      "Emotional instability affects powers"
-    ],
-    "firstAppearance": 1975,
-    "rating": 4.4,
-    "image": "assets/images/storm.jpg",
-    "biography": "Mutante capaz de controlar el clima, miembro de los X-Men y antigua reina de Wakanda."
-  },
-  {
-    "id": "green_goblin",
-    "name": "Green Goblin",
-    "aliases": [
-      "Norman Osborn",
-      "The Goblin"
-    ],
-    "universe": "Marvel",
-    "affiliation": "Villain",
-    "powerStats": {
-      "intelligence": 90,
-      "strength": 55,
-      "speed": 45,
-      "durability": 50,
-      "power": 65,
-      "combat": 75
-    },
-    "powers": [
-      "Super strength",
-      "Goblin glider",
-      "Pumpkin bombs",
-      "Genius intellect"
-    ],
-    "weaknesses": [
-      "Split personality",
-      "Insanity",
-      "Obsession with Spider-Man"
-    ],
-    "firstAppearance": 1964,
-    "rating": 4.3,
-    "image": "assets/images/green-goblin.jpg",
-    "biography": "Empresario transformado en supervillano por un suero que le da fuerza sobrehumana pero le causa locura."
-  },
-  {
     "id": "spiderman",
     "name": "Spider-Man",
-    "aliases": [
-      "Peter Parker",
-      "Spidey",
-      "Spidy",
-      "Hombre Araña",
-      "The Amazing Spider-Man"
-    ],
+    "aliases": ["Peter Parker", "Spidey", "Spidy", "Hombre Araña", "The Amazing Spider-Man"],
     "universe": "Marvel",
     "affiliation": "Hero",
     "powerStats": {
@@ -260,181 +72,367 @@
     ],
     "firstAppearance": 1962,
     "rating": 4.8,
-    "image": "assets/images/spiderman.png",
-    "biography": "Peter Parker era un estudiante tímido y académicamente brillante que fue mordido por una araña radiactiva durante una excursión científica. Tras el asesinato de su tío Ben, aprendió que 'un gran poder conlleva una gran responsabilidad'. Como Spider-Man, protege Nueva York mientras equilibra su vida personal, académica y superheroica."
+    "image": "assets/images/spiderman.jpeg",
+    "biography": "Peter Parker fue mordido por una araña radiactiva y ahora protege Nueva York como Spider-Man."
+  },
+
+
+  {
+    "id": "ironman",
+    "name": "Iron Man",
+    "aliases": ["Tony Stark", "Shellhead"],
+    "universe": "Marvel",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 100,
+      "strength": 85,
+      "speed": 70,
+      "durability": 85,
+      "power": 90,
+      "combat": 75
+    },
+    "powers": ["Powered armor suit", "Genius-level intellect", "Energy blasts", "Flight"],
+    "weaknesses": ["Arc reactor dependency", "Human limits", "Ego"],
+    "firstAppearance": 1963,
+    "rating": 4.7,
+    "image": "assets/images/ironman.png",
+    "biography": "Tony Stark, un genio millonario, combate amenazas globales con su traje de alta tecnología."
   },
   {
-    "id": "carnage",
-    "name": "Carnage",
-    "aliases": [
-      "Cletus Kasady",
-      "The Red Slayer",
-      "The Crimson Psychopath"
-    ],
+    "id": "captain_america",
+    "name": "Capitan America",
+    "aliases": ["Steve Rogers", "Cap"],
+    "universe": "Marvel",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 80,
+      "strength": 50,
+      "speed": 50,
+      "durability": 60,
+      "power": 55,
+      "combat": 95
+    },
+    "powers": ["Super soldier serum", "Peak human condition", "Shield mastery", "Leadership"],
+    "weaknesses": ["Moral code", "Human limits"],
+    "firstAppearance": 1941,
+    "rating": 4.6,
+    "image": "assets/images/capitanamerica.jpeg",
+    "biography": "Steve Rogers es el primer vengador, símbolo de justicia y valentía."
+  },
+  {
+    "id": "thor",
+    "name": "Thor",
+    "aliases": ["God of Thunder", "Odinson"],
+    "universe": "Marvel",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 65,
+      "strength": 100,
+      "speed": 90,
+      "durability": 100,
+      "power": 100,
+      "combat": 85
+    },
+    "powers": ["Mjolnir", "Lightning control", "Super strength", "Flight"],
+    "weaknesses": ["Arrogance", "Emotional attachments"],
+    "firstAppearance": 1962,
+    "rating": 4.8,
+    "image": "assets/images/thor.jpeg",
+    "biography": "Dios del Trueno de Asgard, protector de los Nueve Reinos."
+  },
+  {
+    "id": "wonder_woman",
+    "name": "Wonder Woman",
+    "aliases": ["Diana Prince", "Princess Diana"],
+    "universe": "DC",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 85,
+      "strength": 95,
+      "speed": 80,
+      "durability": 90,
+      "power": 95,
+      "combat": 90
+    },
+    "powers": ["Super strength", "Lasso of Truth", "Amazonian training", "Flight"],
+    "weaknesses": ["Compassion", "Magical vulnerabilities"],
+    "firstAppearance": 1941,
+    "rating": 4.7,
+    "image": "assets/images/wonderwoman.jpg",
+    "biography": "Guerrera amazona entrenada para proteger el mundo humano."
+  },
+  {
+    "id": "flash",
+    "name": "Flash",
+    "aliases": ["Barry Allen", "The Fastest Man Alive"],
+    "universe": "DC",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 85,
+      "strength": 20,
+      "speed": 100,
+      "durability": 70,
+      "power": 95,
+      "combat": 70
+    },
+    "powers": ["Super speed", "Time travel", "Speed Force"],
+    "weaknesses": ["High metabolism", "Overconfidence"],
+    "firstAppearance": 1956,
+    "rating": 4.6,
+    "image": "assets/images/flash.jpg",
+    "biography": "Barry Allen posee una velocidad increíble gracias a la Speed Force."
+  },
+  {
+    "id": "aquaman",
+    "name": "Aquaman",
+    "aliases": ["Arthur Curry", "King of Atlantis"],
+    "universe": "DC",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 75,
+      "strength": 85,
+      "speed": 75,
+      "durability": 80,
+      "power": 80,
+      "combat": 70
+    },
+    "powers": ["Underwater breathing", "Super strength", "Telepathy with marine life"],
+    "weaknesses": ["Dehydration", "Obligations as king"],
+    "firstAppearance": 1941,
+    "rating": 4.4,
+    "image": "assets/images/aquaman.jpg",
+    "biography": "Rey de la Atlántida, protector de los océanos."
+  },
+  {
+    "id": "green_lantern",
+    "name": "Linterna Verde",
+    "aliases": ["Hal Jordan", "Green Lantern"],
+    "universe": "DC",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 75,
+      "strength": 70,
+      "speed": 80,
+      "durability": 85,
+      "power": 95,
+      "combat": 65
+    },
+    "powers": ["Power ring constructs", "Flight", "Energy projection"],
+    "weaknesses": ["Willpower dependency", "Ring recharge"],
+    "firstAppearance": 1959,
+    "rating": 4.5,
+    "image": "assets/images/linternaverde.jpg",
+    "biography": "Hal Jordan usa un anillo de poder para crear construcciones de energía pura."
+  },
+  {
+    "id": "hulk",
+    "name": "Hulk",
+    "aliases": ["Bruce Banner", "The Green Goliath"],
+    "universe": "Marvel",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 65,
+      "strength": 100,
+      "speed": 70,
+      "durability": 100,
+      "power": 95,
+      "combat": 85
+    },
+    "powers": ["Unlimited strength", "Regeneration", "Shockwaves"],
+    "weaknesses": ["Rage control", "Banner vulnerability"],
+    "firstAppearance": 1962,
+    "rating": 4.7,
+    "image": "assets/images/hulk.jpg",
+    "biography": "Bruce Banner se transforma en el poderoso Hulk cuando pierde el control."
+  },
+  {
+    "id": "doctor_strange",
+    "name": "Doctor Strange",
+    "aliases": ["Stephen Strange", "Sorcerer Supreme"],
+    "universe": "Marvel",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 90,
+      "strength": 20,
+      "speed": 40,
+      "durability": 60,
+      "power": 100,
+      "combat": 70
+    },
+    "powers": ["Mystic arts", "Teleportation", "Reality manipulation"],
+    "weaknesses": ["Physical fragility", "Artifact dependency"],
+    "firstAppearance": 1963,
+    "rating": 4.6,
+    "image": "assets/images/doctorstrange.jpg",
+    "biography": "El Hechicero Supremo, protector de la realidad."
+  },
+  {
+    "id": "cyclops",
+    "name": "Cyclops",
+    "aliases": ["Scott Summers"],
+    "universe": "Marvel",
+    "affiliation": "Hero",
+    "powerStats": {
+      "intelligence": 80,
+      "strength": 20,
+      "speed": 30,
+      "durability": 50,
+      "power": 85,
+      "combat": 80
+    },
+    "powers": ["Optic blasts", "Tactical leadership"],
+    "weaknesses": ["Visor dependency", "Emotional control"],
+    "firstAppearance": 1963,
+    "rating": 4.3,
+    "image": "assets/images/cyclops.avif",
+    "biography": "Líder de campo de los X-Men con visión óptica devastadora."
+  },
+
+  {
+    "id": "thanos",
+    "name": "Thanos",
+    "aliases": ["The Mad Titan"],
+    "universe": "Marvel",
+    "affiliation": "Villain",
+    "powerStats": {
+      "intelligence": 90,
+      "strength": 100,
+      "speed": 50,
+      "durability": 100,
+      "power": 100,
+      "combat": 85
+    },
+    "powers": ["Super strength", "Cosmic energy", "Infinity Gauntlet"],
+    "weaknesses": ["Obsession with balance"],
+    "firstAppearance": 1973,
+    "rating": 4.8,
+    "image": "assets/images/thanos.png",
+    "biography": "El Titán Loco busca el equilibrio universal a cualquier costo."
+  },
+  {
+    "id": "darkseid",
+    "name": "Darkseid",
+    "aliases": ["Uxas", "Lord of Apokolips"],
+    "universe": "DC",
+    "affiliation": "Villain",
+    "powerStats": {
+      "intelligence": 95,
+      "strength": 100,
+      "speed": 60,
+      "durability": 100,
+      "power": 100,
+      "combat": 90
+    },
+    "powers": ["Omega beams", "Super strength", "Invulnerability", "Teleportation"],
+    "weaknesses": ["Anti-Life Equation obsession"],
+    "firstAppearance": 1970,
+    "rating": 4.7,
+    "image": "assets/images/darkseid.jpg",
+    "biography": "Tirano de Apokolips que busca controlar toda la existencia."
+  },
+  {
+    "id": "loki",
+    "name": "Loki",
+    "aliases": ["God of Mischief"],
+    "universe": "Marvel",
+    "affiliation": "Villain",
+    "powerStats": {
+      "intelligence": 95,
+      "strength": 50,
+      "speed": 45,
+      "durability": 60,
+      "power": 90,
+      "combat": 60
+    },
+    "powers": ["Illusions", "Magic", "Shapeshifting"],
+    "weaknesses": ["Ego", "Family issues"],
+    "firstAppearance": 1949,
+    "rating": 4.6,
+    "image": "assets/images/loki.webp",
+    "biography": "Dios del Engaño y hermano adoptivo de Thor."
+  },
+  {
+    "id": "magneto",
+    "name": "Magneto",
+    "aliases": ["Erik Lehnsherr", "Master of Magnetism"],
+    "universe": "Marvel",
+    "affiliation": "Villain",
+    "powerStats": {
+      "intelligence": 85,
+      "strength": 50,
+      "speed": 40,
+      "durability": 70,
+      "power": 95,
+      "combat": 80
+    },
+    "powers": ["Magnetism control", "Flight", "Electromagnetic manipulation"],
+    "weaknesses": ["Emotional trauma", "Non-metal environments"],
+    "firstAppearance": 1963,
+    "rating": 4.6,
+    "image": "assets/images/magneto.jpg",
+    "biography": "Mutante con dominio total del magnetismo y líder de la Hermandad."
+  },
+  {
+    "id": "reverse_flash",
+    "name": "Reverse Flash",
+    "aliases": ["Eobard Thawne"],
+    "universe": "DC",
+    "affiliation": "Villain",
+    "powerStats": {
+      "intelligence": 85,
+      "strength": 20,
+      "speed": 100,
+      "durability": 70,
+      "power": 95,
+      "combat": 75
+    },
+    "powers": ["Negative Speed Force", "Time manipulation"],
+    "weaknesses": ["Timeline instability"],
+    "firstAppearance": 1963,
+    "rating": 4.5,
+    "image": "assets/images/reverseflash.webp",
+    "biography": "El velocista del futuro obsesionado con destruir a Flash."
+  },
+  {
+    "id": "venom",
+    "name": "Venom",
+    "aliases": ["Eddie Brock"],
     "universe": "Marvel",
     "affiliation": "Villain",
     "powerStats": {
       "intelligence": 70,
       "strength": 80,
-      "speed": 70,
+      "speed": 60,
       "durability": 85,
       "power": 85,
       "combat": 75
     },
-    "powers": [
-      "Symbiote abilities",
-      "Shapeshifting",
-      "Weapon generation",
-      "Regeneration",
-      "Wall-crawling",
-      "Immunity to Spider-Sense"
-    ],
-    "weaknesses": [
-      "Sonic vibrations",
-      "Extreme heat/fire",
-      "Psychopathic instability",
-      "Symbiote dependency"
-    ],
-    "firstAppearance": 1992,
+    "powers": ["Symbiote powers", "Shapeshifting", "Web-like tendrils"],
+    "weaknesses": ["Sonic attacks", "Fire"],
+    "firstAppearance": 1988,
     "rating": 4.7,
-    "image": "assets/images/carnage.jpg",
-    "biography": "Cletus Kasady es un asesino en serie psicótico que se fusiona con un simbionte hijo de Venom, creando a Carnage, un ser de pura maldad y caos que supera en violencia a su progenitor."
+    "image": "assets/images/venom.jpg",
+    "biography": "Eddie Brock se fusiona con un simbionte alienígena convirtiéndose en Venom."
   },
   {
-    "id": "red_skull",
-    "name": "Red Skull",
-    "aliases": [
-      "Johann Schmidt",
-      "The Captain of Chaos"
-    ],
+    "id": "ultron",
+    "name": "Ultron",
+    "aliases": ["Ultron Prime"],
     "universe": "Marvel",
     "affiliation": "Villain",
     "powerStats": {
-      "intelligence": 95,
-      "strength": 20,
-      "speed": 20,
-      "durability": 25,
-      "power": 30,
+      "intelligence": 100,
+      "strength": 85,
+      "speed": 70,
+      "durability": 95,
+      "power": 90,
       "combat": 80
     },
-    "powers": [
-      "Genius-level intellect",
-      "Master strategist",
-      "Expert martial artist",
-      "Political manipulation",
-      "Cosmic Cube mastery"
-    ],
-    "weaknesses": [
-      "No superpowers",
-      "Extreme arrogance",
-      "Obsession with Captain America",
-      "Physical limitations"
-    ],
-    "firstAppearance": 1941,
+    "powers": ["Artificial intelligence", "Energy blasts", "Flight", "Regeneration"],
+    "weaknesses": ["Narcissism", "Overconfidence"],
+    "firstAppearance": 1968,
     "rating": 4.4,
-    "image": "assets/images/redskull.jpg",
-    "biography": "Líder nazi y archienemigo de Captain America, transformado por un experimento que le dio su icónica calavera roja. Es un genio estratégico obsesionado con el poder mundial."
-  },
-  {
-    "id": "mysterio",
-    "name": "Mysterio",
-    "aliases": [
-      "Quentin Beck",
-      "Master of Illusion",
-      "The Grand Illusionist"
-    ],
-    "universe": "Marvel",
-    "affiliation": "Villain",
-    "powerStats": {
-      "intelligence": 90,
-      "strength": 15,
-      "speed": 20,
-      "durability": 25,
-      "power": 75,
-      "combat": 60
-    },
-    "powers": [
-      "Master of special effects",
-      "Illusion technology",
-      "Hypnosis",
-      "Chemistry expertise",
-      "Robotics engineering"
-    ],
-    "weaknesses": [
-      "No real superpowers",
-      "Over-theatricality",
-      "Ego vulnerability",
-      "Technology dependency"
-    ],
-    "firstAppearance": 1964,
-    "rating": 4.3,
-    "image": "assets/images/mysterio.jpg",
-    "biography": "Ex especialista de efectos especiales que utiliza su conocimiento en ilusiones y tecnología para crear elaborados engaños y convertirse en uno de los villanos más engañosos de Spider-Man."
-  },
-  {
-    "id": "doctor_octopus",
-    "name": "Doctor Octopus",
-    "aliases": [
-      "Otto Octavius",
-      "Doc Ock"
-    ],
-    "universe": "Marvel",
-    "affiliation": "Villain",
-    "powerStats": {
-      "intelligence": 95,
-      "strength": 60,
-      "speed": 40,
-      "durability": 55,
-      "power": 70,
-      "combat": 65
-    },
-    "powers": [
-      "Tentacle arms",
-      "Genius intellect",
-      "Super strength",
-      "Wall-crawling"
-    ],
-    "weaknesses": [
-      "Physical vulnerability",
-      "Arrogance",
-      "Tentacle dependency"
-    ],
-    "firstAppearance": 1963,
-    "rating": 4.2,
-    "image": "assets/images/doctor-octopus.jpg",
-    "biography": "Científico brillante que tras un accidente se fusiona con sus brazos mecánicos y se convierte en villano."
-  },
-  {
-    "id": "nightwing",
-    "name": "Nightwing",
-    "aliases": [
-      "Dick Grayson",
-      "The First Robin"
-    ],
-    "universe": "DC",
-    "affiliation": "Hero",
-    "powerStats": {
-      "intelligence": 80,
-      "strength": 25,
-      "speed": 45,
-      "durability": 30,
-      "power": 25,
-      "combat": 95
-    },
-    "powers": [
-      "Acrobatics",
-      "Martial arts",
-      "Leadership",
-      "Escrima sticks mastery"
-    ],
-    "weaknesses": [
-      "No superpowers",
-      "Emotional attachments",
-      "Human limits"
-    ],
-    "firstAppearance": 1984,
-    "rating": 4.4,
-    "image": "assets/images/nightwin.jpg",
-    "biography": "El primer Robin que evolucionó para convertirse en su propio héroe, protector de Blüdhaven."
+    "image": "assets/images/ultron.jpg",
+    "biography": "IA creada para la paz que concluyó que la humanidad debía ser erradicada."
   }
 ]
