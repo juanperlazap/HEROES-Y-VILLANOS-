@@ -1,0 +1,153 @@
+<ion-header>
+  <ion-toolbar class="header-personalizado" [class.dark]="isDark">
+    <ion-title class="titulo-principal">PERSONAJES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo-contenido" [class.dark]="isDark">
+  <!-- Sección de búsqueda -->
+  <div class="contenedor-busqueda" [class.dark]="isDark">
+    <div class="busqueda-circular">
+      <input 
+        type="text" 
+        placeholder="Escribe tu personaje..."
+        [value]="queryBusqueda"
+        (input)="onBuscar($event)"
+        class="campo-busqueda"
+        [class.dark]="isDark">
+    </div>
+  </div>
+
+  <!-- Panel de filtros -->
+  <div class="panel-filtros" [class.dark]="isDark">
+    <div class="grupo-filtro">
+      <div class="etiqueta-filtro">CATEGORÍA</div>
+      <div class="botones-filtro">
+        <button 
+          [class.activo]="filtroAfiliacion === ''"
+          (click)="cambiarAfiliacion({detail: {value: ''}})"
+          class="boton-filtro"
+          [class.dark]="isDark">
+          Todos
+        </button>
+        <button 
+          [class.activo]="filtroAfiliacion === 'Hero'"
+          (click)="cambiarAfiliacion({detail: {value: 'Hero'}})"
+          class="boton-filtro"
+          [class.dark]="isDark">
+          Héroes
+        </button>
+        <button 
+          [class.activo]="filtroAfiliacion === 'Villain'"
+          (click)="cambiarAfiliacion({detail: {value: 'Villain'}})"
+          class="boton-filtro"
+          [class.dark]="isDark">
+          Villanos
+        </button>
+      </div>
+    </div>
+
+    <div class="grupo-filtro">
+      <div class="etiqueta-filtro">UNIVERSO</div>
+      <div class="botones-filtro">
+        <button 
+          [class.activo]="filtroUniverso === ''"
+          (click)="cambiarUniverso({detail: {value: ''}})"
+          class="boton-filtro"
+          [class.dark]="isDark">
+          Todos
+        </button>
+        <button 
+          [class.activo]="filtroUniverso === 'Marvel'"
+          (click)="cambiarUniverso({detail: {value: 'Marvel'}})"
+          class="boton-filtro"
+          [class.dark]="isDark">
+          Marvel
+        </button>
+        <button 
+          [class.activo]="filtroUniverso === 'DC'"
+          (click)="cambiarUniverso({detail: {value: 'DC'}})"
+          class="boton-filtro"
+          [class.dark]="isDark">
+          DC
+        </button>
+      </div>
+    </div>
+
+    <div class="grupo-filtro">
+      <div class="etiqueta-filtro">ORDENAR</div>
+      <div class="botones-filtro">
+        <button 
+          [class.activo]="orden === 'nombre-asc'"
+          (click)="cambiarOrden('nombre-asc')"
+          class="boton-filtro"
+          [class.dark]="isDark">
+          A - Z
+        </button>
+        <button 
+          [class.activo]="orden === 'nombre-desc'"
+          (click)="cambiarOrden('nombre-desc')"
+          class="boton-filtro"
+          [class.dark]="isDark">
+          Z - A
+        </button>
+      </div>
+    </div>
+
+    <div class="grupo-filtro" *ngIf="hayFiltrosActivos()">
+      <button class="boton-limpiar" (click)="limpiarFiltros()" [class.dark]="isDark">
+        <span class="icono-limpiar">✕</span>
+        Limpiar filtros
+      </button>
+    </div>
+  </div>
+
+  <!-- Lista de personajes -->
+  <div class="contenedor-personajes" [class.dark]="isDark">
+    <div class="grid-personajes" *ngIf="!cargando && !error">
+      <div 
+        class="tarjeta-personaje" 
+        *ngFor="let personaje of personajesFiltrados"
+        [routerLink]="['/detalles-personaje', personaje.id]"
+        [class.heroe]="personaje.affiliation === 'Hero'"
+        [class.villano]="personaje.affiliation === 'Villain'"
+        [class.dark]="isDark">
+        
+        <div class="imagen-contenedor">
+          <img [src]="personaje.image" [alt]="personaje.name" class="imagen-personaje">
+        </div>
+        
+        <div class="info-personaje">
+          <h3 class="nombre-personaje">{{ personaje.name }}</h3>
+          <p class="universo-personaje">{{ personaje.universe }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estados de carga y error -->
+  <div *ngIf="cargando" class="contenedor-estado" [class.dark]="isDark">
+    <div class="cargando-animacion">
+      <div class="spinner"></div>
+      <p>Buscando en el multiverso...</p>
+    </div>
+  </div>
+
+  <div *ngIf="error" class="contenedor-estado" [class.dark]="isDark">
+    <div class="error-contenido">
+      <span class="icono-error">⚠️</span>
+      <p>¡Vaya! No pudimos contactar con el cuartel general</p>
+      <button (click)="cargarPersonajes()" class="boton-reintentar" [class.dark]="isDark">
+        Reintentar conexión
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="!cargando && personajesFiltrados.length === 0" class="contenedor-estado" [class.dark]="isDark">
+    <div class="sin-resultados">
+      <span class="icono-sin-resultados">🔍</span>
+      <p>No encontramos coincidencias en nuestra base de datos</p>
+      <p class="subtitulo-sin-resultados">Intenta con otros términos o filtros</p>
+    </div>
+  </div>
+</ion-content>

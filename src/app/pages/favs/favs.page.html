@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar class="header-personalizado" [class.dark]="isDark">
+    <ion-title class="titulo-principal">MIS FAVORITOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo-contenido" [class.dark]="isDark">
+
+  <!-- Estado de carga -->
+  <div *ngIf="cargando" class="contenedor-estado" [class.dark]="isDark">
+    <p>Cargando tus favoritos...</p>
+  </div>
+
+  <!-- GRID DE FAVORITOS estilo Explore -->
+  <div class="contenedor-personajes" *ngIf="!cargando && favoritos.length > 0" [class.dark]="isDark">
+    <div class="grid-personajes">
+
+      <div 
+        class="tarjeta-personaje"
+        *ngFor="let personaje of favoritos"
+        [class.heroe]="personaje.affiliation === 'Hero'"
+        [class.villano]="personaje.affiliation === 'Villain'"
+        [class.dark]="isDark"
+        [routerLink]="['/detalles-personaje', personaje.id]">
+
+        <!-- Imagen -->
+        <div class="imagen-contenedor">
+          <img [src]="personaje.image" [alt]="personaje.name" class="imagen-personaje">
+        </div>
+
+        <!-- Info -->
+        <div class="info-personaje">
+          <h3 class="nombre-personaje">{{ personaje.name }}</h3>
+          <p class="universo-personaje">{{ personaje.universe }}</p>
+        </div>
+
+        <!-- Botón estrella para quitar de favoritos -->
+        <ion-button 
+          fill="clear" 
+          class="boton-favorito"
+          (click)="eliminarFavorito(personaje, $event)">
+          <ion-icon name="star" slot="icon-only"></ion-icon>
+        </ion-button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Estado vacío -->
+  <div *ngIf="!cargando && favoritos.length === 0" class="contenedor-estado" [class.dark]="isDark">
+    <p>NO TIENES FAVORITOS!</p>
+    <p class="subtexto">Agrega algunos desde el explorador</p>
+
+    <ion-button 
+      [routerLink]="['/tabs/explorar']" 
+      color="success" 
+      class="boton-cuadrado">
+      Pagina principal
+    </ion-button>
+  </div>
+
+</ion-content>

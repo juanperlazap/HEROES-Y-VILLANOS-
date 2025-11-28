@@ -1,0 +1,311 @@
+/* =========================================
+   VARIABLES GENERALES
+========================================= */
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f8f9fa;
+  --border: #e9ecef;
+  --text: #000;
+  --text-muted: #92949c;
+
+  --primary: #3880ff;
+  --primary-light: rgba(56, 128, 255, 0.1);
+  --primary-light-2: rgba(56, 128, 255, 0.2);
+
+  --danger: #eb445a;
+
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   MODO OSCURO
+========================================= */
+body.dark {
+  --bg: #1e1e1e;
+  --bg-alt: #2d2d2d;
+  --border: #444;
+  --text: #fff;
+  --text-muted: #888;
+
+  --primary-light: rgba(56, 128, 255, 0.2);
+  --primary-light-2: rgba(56, 128, 255, 0.3);
+
+  --card-bg: #2d2d2d;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================
+   BUSCADOR
+========================================= */
+.contenedor-busqueda {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.campo-busqueda {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px 20px;
+  border-radius: 50px;
+  border: 2px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 16px;
+  box-shadow: 0 2px 10px var(--card-shadow);
+}
+
+.campo-busqueda::placeholder {
+  color: var(--text-muted);
+}
+
+.campo-busqueda:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 4px 15px var(--primary-light-2);
+}
+
+/* =========================================
+   FILTROS
+========================================= */
+.panel-filtros {
+  background: var(--card-bg);
+  margin: 0 16px 16px;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px var(--card-shadow);
+  border: 1px solid var(--border);
+}
+
+.etiqueta-filtro {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.botones-filtro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Botón base */
+.boton-filtro {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid var(--border);
+  background: rgba(0, 0, 0, 0.05);
+  color: #374151 !important;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+/* Modo oscuro */
+body.dark .boton-filtro {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #4b5563;
+  color: #e5e7eb !important;
+}
+
+/* Hover */
+.boton-filtro:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+/* Activo — CORRECCIÓN PRINCIPAL */
+.boton-filtro.activo {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #000 !important; /* ← TEXTO NEGRO EN TEMA CLARO */
+  box-shadow: 0 4px 12px rgba(56, 128, 255, 0.3);
+  font-weight: 600;
+}
+
+/* Activo en modo oscuro */
+body.dark .boton-filtro.activo {
+  color: #ffffff !important;
+  border-color: #6aa8ff !important;
+}
+
+/* Botón limpiar */
+.boton-limpiar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 2px solid var(--danger);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: rgba(235, 68, 90, 0.1);
+  color: var(--danger) !important;
+  font-weight: 500;
+}
+
+body.dark .boton-limpiar {
+  background: rgba(235, 68, 90, 0.15);
+  border-color: #ff7a7a;
+  color: #ff7a7a !important;
+}
+
+.boton-limpiar:hover {
+  background: var(--danger);
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   GRID
+========================================= */
+.grid-personajes {
+  display: grid;
+  gap: 20px;
+  padding: 0 16px 16px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .grid-personajes {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-personajes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   TARJETAS
+========================================= */
+.tarjeta-personaje {
+  background: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px var(--card-shadow);
+  transition: 0.3s;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.tarjeta-personaje.heroe {
+  background: linear-gradient(135deg, rgba(56,128,255,0.12), rgba(56,128,255,0.25));
+  border-color: #3880ff;
+}
+
+.tarjeta-personaje.villano {
+  background: linear-gradient(135deg, rgba(235,68,90,0.12), rgba(235,68,90,0.25));
+  border-color: #eb445a;
+}
+
+/* Modo oscuro */
+body.dark .tarjeta-personaje.heroe {
+  background: linear-gradient(135deg, rgba(56,128,255,0.15), rgba(56,128,255,0.35));
+  border-color: #6aa8ff;
+}
+
+body.dark .tarjeta-personaje.villano {
+  background: linear-gradient(135deg, rgba(235,68,90,0.20), rgba(235,68,90,0.35));
+  border-color: #ff7a7a;
+}
+
+.tarjeta-personaje:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px var(--card-shadow);
+}
+
+.imagen-contenedor {
+  height: 200px;
+  overflow: hidden;
+}
+
+.imagen-personaje {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.tarjeta-personaje:hover .imagen-personaje {
+  transform: scale(1.05);
+}
+
+.info-personaje {
+  padding: 20px;
+  text-align: center;
+  color: var(--text);
+}
+
+.nombre-personaje {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.universo-personaje {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* =========================================
+   ESTADOS
+========================================= */
+.contenedor-estado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 20px;
+  text-align: center;
+  color: var(--text);
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--text-muted);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.boton-filtro {
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: 2px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+/* Activo – texto BLANCO como pediste */
+.boton-filtro.activo {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Modo oscuro */
+.boton-filtro.dark {
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+
+.boton-filtro.activo.dark {
+  background: #58a6ff;
+  color: #fff;
+}

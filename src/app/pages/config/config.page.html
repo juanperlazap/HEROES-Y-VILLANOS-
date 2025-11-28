@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ajustes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="configuracion-moderna">
+    
+    <!-- Sección de Apariencia -->
+    <div class="seccion">
+      <h2 class="titulo-seccion">Apariencia</h2>
+      
+      <!-- Tema Oscuro -->
+      <div class="opcion-tarjeta">
+        <div class="opcion-info">
+          <div class="opcion-icono">
+            <ion-icon name="moon"></ion-icon>
+          </div>
+          <div class="opcion-texto">
+            <h3>Tema oscuro</h3>
+            <p>Activar modo oscuro</p>
+          </div>
+        </div>
+        <ion-toggle 
+          [checked]="temaOscuro"
+          (ionChange)="onTemaCambiado($event)"
+          class="toggle-elegante">
+        </ion-toggle>
+      </div>
+
+      <!-- Tamaño de Texto -->
+      <div class="opcion-tarjeta">
+        <div class="opcion-info">
+          <div class="opcion-icono">
+            <ion-icon name="text"></ion-icon>
+          </div>
+          <div class="opcion-texto">
+            <h3>Tamaño del texto</h3>
+            <p>Selecciona el tamaño preferido</p>
+          </div>
+        </div>
+        <div class="selector-tamano">
+          <button 
+            class="btn-tamano" 
+            [class.activo]="tamanoFuente === 'normal'"
+            (click)="cambiarTamanoFuente('normal')">
+            a
+          </button>
+          <button 
+            class="btn-tamano grande" 
+            [class.activo]="tamanoFuente === 'grande'"
+            (click)="cambiarTamanoFuente('grande')">
+            A
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Información de la App -->
+    <div class="info-app">
+      <div class="creditos">
+        <p>App creada por</p>
+        <h3>Juan Perlaza y Dalahy Castro</h3>
+        <p class="derechos">Todos los derechos reservados</p>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

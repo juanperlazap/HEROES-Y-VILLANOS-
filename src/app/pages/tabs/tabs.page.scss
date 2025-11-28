@@ -1,0 +1,49 @@
+
+.contenedor-busqueda {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.contenedor-busqueda.dark {
+  background: transparent;
+}
+
+
+.busqueda-circular {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 50px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.busqueda-circular.dark {
+  background: #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+
+.campo-busqueda {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 8px 12px;
+  color: #000;         
+}
+
+.campo-busqueda::placeholder {
+  color: #666;
+}
+
+
+.campo-busqueda.dark {
+  color: #fff !important;
+}
+
+.campo-busqueda.dark::placeholder {
+  color: #aaa;
+}
